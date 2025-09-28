@@ -4,13 +4,14 @@ import os
 
 # Define Variable
 angka = 1024
+lokasi_kerja = os.path.abspath(__file__)
 
 # Define Function
 def fungsi_tampilan_terminal():
 	print()
-	print("[ JUDUL TABEL PROGRAM ]")
+	print("[ %s ]" % lokasi_kerja)
 	print("================================================================")
-	print("                                          %10s %10s " % ("Total", "Size (MB)"))
+	print(" %40s %10s %10s " % ("", "Total", "Size (MB)"))
 	print(" %-42s %8d %8dMB " % ("File .JPG", angka, angka))
 	print(" %-42s %8d %8dMB " % ("File .PNG", angka, angka))
 	print(" %-42s %8d %8dMB " % ("File .GIF", angka, angka))
